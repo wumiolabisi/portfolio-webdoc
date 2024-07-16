@@ -28,3 +28,10 @@ body {
     text-wrap: balance;
   }
 }
+
+video.video-container {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  pointer-events: none;
+}
