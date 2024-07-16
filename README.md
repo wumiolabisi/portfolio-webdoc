@@ -58,7 +58,7 @@ npm install
 Démarrez le serveur de développement :
 
 ```bash
-    npm run dev
+npm run dev
 ```
 Votre application devrait être accessible à l'adresse http://localhost:3000.
 
@@ -70,6 +70,32 @@ Pour exécuter les tests unitaires, utilisez la commande suivante :
 npm run test
 ```
 Cela lancera Vitest et exécutera tous les tests définis dans le projet.
+
+# Organisation dans Git
+* develop : Contient le dernier code de développement. Cette branche est utilisée pour rassembler toutes les nouvelles fonctionnalités et les correctifs avant qu'ils ne soient prêts pour la production.
+
+## Branche de production
+* Nom : main
+* Basée sur : develop
+* Utilisation : Contient le code en production stable. Chaque commit dans cette branche doit être prêt pour la production.
+
+## Branche de développement
+* Nom : develop
+* Basée sur : feature/nom-fonctionnalité et bugfix/correction-bug
+* Merge vers : main
+* Utilisation : Contient le dernier code de développement. Cette branche est utilisée pour rassembler toutes les nouvelles fonctionnalités et les correctifs avant qu'ils ne soient prêts pour la production.
+
+## Branches de fonctionnalité
+* Nom : feature/nom-fonctionnalité
+* Basée sur : develop
+* Merge vers : develop
+* Utilisation : Pour développer de nouvelles fonctionnalités ou faire des modifications importantes. Une fois la fonctionnalité terminée, elle est fusionnée dans develop.
+
+## Branches de Correction de Bug
+* Nom : bugfix/correction-bug
+* Basée sur : develop
+* Merge vers : develop
+* Utilisation : Pour corriger des bugs détectés dans la branche develop. Une fois le bug corrigé, la branche est fusionnée dans develop.
 
 # Contribution
 
