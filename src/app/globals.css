@@ -31,7 +31,7 @@ body {
 
 video.video-container {
   width: 80%;
-  height: 80%;
+  height: 450px;
   object-fit: cover;
   pointer-events: none;
 }
