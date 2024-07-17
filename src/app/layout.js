@@ -14,7 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className={zilla_slab.className}>{children}</body>
+      <body className={zilla_slab.className}>
+        <main className="bg-grey-dark">
+          <div className="container mx-auto h-screen">
+            <div className="flex flex-col justify-center h-full">
+              {children}
+            </div>
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
