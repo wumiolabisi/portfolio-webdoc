@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Presentation() {
     return (
         <>
-            <Diapositive>
+            <Diapositive classToAdd="hidden">
                 <div className="flex flex-col justify-center w-full h-full gap-4 px-8">
                     <div className="flex w-full justify-center">
                         <h1 className="text-white text-4xl font-bold">Retour où tout a commencer</h1>
@@ -33,7 +33,7 @@ export default function Presentation() {
 
                 </div>
             </Diapositive>
-            <Diapositive>
+            <Diapositive classToAdd="hidden">
                 <div className="flex flex-col justify-center w-full h-full gap-4 px-8">
                     <div className="flex w-full justify-center">
                         <article className="text-wrap w-96">
@@ -48,7 +48,7 @@ export default function Presentation() {
 
                 </div>
             </Diapositive>
-            <Diapositive>
+            <Diapositive >
                 <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-full">
                     <div className="flex flex-col w-full md:w-3/6 justify-center content-center items-center h-fit">
                         <Video height="video-h-long" src="/videos/video-omowumi-page-home.mp4" replacementImg="/wumi-section-presentation-1.jpg" />
