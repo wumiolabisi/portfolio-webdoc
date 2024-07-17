@@ -1,5 +1,4 @@
 import Button from "@/_components/Button";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
                     <p className="text-white">Basée à Limours</p>
                     <p className="text-white">Disponible 🟢</p>
                   </div>
-                  <Button href="/a-propos" title="Commencer l'expérience" label="COMMENCER →" />
+                  <Button href="/presentation" title="Commencer l'expérience" label="COMMENCER →" />
                 </article>
               </div>
               <div className="flex w-full md:w-3/6 justify-center content-center items-center h-fit">
