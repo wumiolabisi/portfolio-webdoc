@@ -6,7 +6,8 @@ export default function Button({ href, label, title }) {
             <Link className="btn-primary"
                 href={href}
                 title={title}
-                alt={title}>
+                alt={title}
+                replace={true}>
                 {label}
             </Link>
         </div>
