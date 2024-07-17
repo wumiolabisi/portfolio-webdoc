@@ -35,3 +35,12 @@ video.video-container {
   object-fit: cover;
   pointer-events: none;
 }
+
+a.btn-primary {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffffff;
+  padding: 15px 25px 15px 5px;
+  text-align: left;
+}

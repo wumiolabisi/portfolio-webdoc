@@ -1,3 +1,4 @@
+import Button from "@/_components/Button";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,12 +12,15 @@ export default function Home() {
                 <article className="text-wrap py-24 md:py-0">
                   <h1 className="text-white text-4xl font-bold">Omowumi OLABISI</h1>
                   <p className="text-white text-2xl">Développeuse Web full-stack</p>
-                  <p className="text-white">Basée à Limours</p>
-                  <p className="text-white">Contacter Omowumi</p>
+                  <div className="my-4">
+                    <p className="text-white">Basée à Limours</p>
+                    <p className="text-white">Disponible 🟢</p>
+                  </div>
+                  <Button href="/a-propos" title="Commencer l'expérience" label="COMMENCER →" />
                 </article>
               </div>
               <div className="flex w-full md:w-3/6 justify-center content-center items-center h-fit">
-                <video className="video-container rounded-lg " autoPlay playsinline loop muted controls>
+                <video className="video-container rounded-lg" autoPlay playsInline loop muted controls>
                   <source src="/videos/video-omowumi-page-home.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
