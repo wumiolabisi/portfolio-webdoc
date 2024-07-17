@@ -58,3 +58,7 @@ a.btn-primary {
   padding: 15px 25px 15px 5px;
   text-align: left;
 }
+
+table td {
+  padding: 20px 15px;
+}
