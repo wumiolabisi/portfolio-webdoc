@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 export default function Presentation() {
 
     const [currentDiapo, setCurrentDiapo] = useState(0)
-    const totalDiapos = 5
+    const totalDiapos = 6
 
     const handleDiapoNext = () => {
         setCurrentDiapo((prev) => Math.min(prev + 1, totalDiapos - 1));
