@@ -22,7 +22,6 @@ export default function Presentation() {
                 handleDiapoNext()
             } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
                 handleDiapoPrev()
-
             }
         }
 

@@ -17,7 +17,7 @@ const Diapositive = ({ currentDiapo }) => {
     ]
 
     const DiapoComponent = diapos[currentDiapo].component;
-    if (diapos[currentDiapo] == 6) {
+    if (currentDiapo == 5) {
         return (
             <div className="flex flex-col rounded-3xl w-full md:w-11/12 h-full md:h-4/5 overflow-hidden ">
                 {DiapoComponent && <DiapoComponent />}
