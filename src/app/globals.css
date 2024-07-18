@@ -62,3 +62,12 @@ a.btn-primary {
 table td {
   padding: 20px 15px;
 }
+
+.diapo-current {
+  visibility: visible;
+}
+
+.diapo-next,
+.diapo-prev {
+  visibility: hidden;
+}
