@@ -1,10 +1,9 @@
 import Button from "@/_components/Button";
-import Diapositive from "@/_components/Diapositive";
 import Video from "@/_components/Video";
 
 export default function Home() {
   return (
-    <Diapositive>
+    <div className="flex flex-col md:bg-light-white rounded-3xl w-full md:w-11/12 h-full md:h-4/5 overflow-hidden ">
       <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-full">
         <div className="flex flex-col w-full md:w-3/6 justify-center md:justify-start">
           <article className="text-wrap py-24 md:py-0">
@@ -21,6 +20,6 @@ export default function Home() {
           <Video height="video-h-long" src="/videos/video-omowumi-page-home.mp4" replacementImg="/wumi-section-presentation-1.jpg" />
         </div>
       </div>
-    </Diapositive>
+    </div>
   );
 }
