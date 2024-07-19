@@ -13,6 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+
     <html lang="fr">
       <body className={zilla_slab.className}>
         <main className="bg-grey-dark">

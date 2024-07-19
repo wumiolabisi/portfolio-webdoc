@@ -21,7 +21,7 @@ const Diapo6 = () => {
                     exit="exit"
                     transition={{ ease: "easeOut", delay: 1, duation: 1.2 }}
                     variants={imageVariants}
-                ><Button href="/" title="Commencer l'expérience" label="VOIR LA RÉPONSE" /></motion.div>
+                ><Button href="/skills" title="Commencer l'expérience" label="VOIR LA RÉPONSE" /></motion.div>
             </div>
         </AnimatePresence>
     )
