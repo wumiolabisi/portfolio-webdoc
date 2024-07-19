@@ -20,19 +20,43 @@ export default function Skills() {
          */
         const orbit = new OrbitControls(camera, renderer.domElement);
         orbit.update();
+        orbit.enableZoom = false;
+        orbit.enableDamping = true;
 
-        const geometry = new THREE.BoxGeometry(1, 1, 1);
-        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-        const cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
+
+        /**
+         * Particules - Définition
+         */
+        const numParticles = 1000;
+        const particlesGeometry = new THREE.BufferGeometry();
+        const positions = new Float32Array(numParticles * 3);
+
+        // Initialiser les positions des particules
+        for (let i = 0; i < numParticles * 3; i++) {
+            positions[i] = Math.random() * 200 - 100;
+        }
+
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+        const particlesMaterial = new THREE.PointsMaterial({
+            color: 0xffffff, // Couleur des particules
+            size: 0.1,       // Taille des particules
+            sizeAttenuation: true, // La taille des particules change en fonction de la distance à la caméra
+            transparent: true,
+        });
+
+        const particles = new THREE.Points(particlesGeometry, particlesMaterial);
+
+        scene.add(particles)
+
+
 
         camera.position.z = 5;
         function animate() {
             renderer.render(scene, camera);
         }
         renderer.setAnimationLoop(animate);
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
+
         return () => {
             renderer.dispose();
         };
