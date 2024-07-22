@@ -7,7 +7,7 @@ const Diapo2 = () => {
     return (
 
 
-        <div className="flex flex-col justify-center w-full h-full gap-4 px-8">
+        <div className="flex flex-col justify-center w-full gap-4 px-8">
             <div className="flex flex-col gap-4 md:flex-row w-full items-center justify-center">
                 <div className="w-full md:w-2/5">
                     <motion.div

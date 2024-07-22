@@ -57,7 +57,7 @@ const Diapo3 = () => {
                             </div>
                             <h2 className="text-xl font-bold">Conception et développement du catalogue de films PAGE 28</h2>
                             <ul>
-                                <li><span className="badge font-bold text-sm">ADRESSE</span> <Link href="https://page28.fr">page28.fr</Link></li>
+                                <li><span className="badge font-bold text-sm">ADRESSE</span> <Link href="https://page28.fr" title="Rendez-vous sur le site Page28" alt="Cliquez ici pour accéder au site page28.fr">page28.fr</Link></li>
                                 <li><span className="badge font-bold text-sm">STACK</span> WordPress, PHP, Javascript, SASS</li>
                                 <li><span className="badge font-bold text-sm">ETAT DU PROJET</span> En ligne</li>
                                 <li><span className="badge font-bold text-sm">CODE SOURCE</span> https://github.com/wumiolabisi/page28-wp-theme</li>
@@ -102,7 +102,7 @@ const Diapo3 = () => {
                             </div>
                             <h2 className="text-xl font-bold">Mise en place de la boutique e-commerce KROSKEL</h2>
                             <ul>
-                                <li><span className="badge font-bold text-sm">ADRESSE</span> <Link href="https://kroskel.com">kroskel.com</Link></li>
+                                <li><span className="badge font-bold text-sm">ADRESSE</span> <Link href="https://kroskel.com" title="Rendez-vous sur la boutique Kroskel" alt="Cliquez ici pour accéder au site kroskel.fr">kroskel.com</Link></li>
                                 <li><span className="badge font-bold text-sm">STACK</span> WordPress, PHP, Javascript, CSS/HTML</li>
                                 <li><span className="badge font-bold text-sm">ETAT DU PROJET</span> En ligne</li>
                             </ul>
