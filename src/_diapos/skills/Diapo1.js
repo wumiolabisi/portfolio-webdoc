@@ -13,7 +13,7 @@ const Diapo1 = () => {
                         initial={{ x: -10, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: -10, opacity: 0 }}
-                        transition={{ ease: "easeOut", duration: 1.9 }}
+                        transition={{ ease: "easeOut", duration: 0.5 }}
                         variants={textVariants}
                     >
                         <p className="text-white text-5xl text-center">Je sais tranformer des idées en interfaces intuitives et engageantes.</p>

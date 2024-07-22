@@ -17,8 +17,8 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body className={zilla_slab.className}>
         <main className="bg-grey-dark">
-          <div className="container mx-auto h-screen">
-            <div className="flex flex-col justify-center items-center h-full">
+          <div className="container mx-auto">
+            <div className="flex flex-col justify-center items-center">
               {children}
             </div>
           </div>

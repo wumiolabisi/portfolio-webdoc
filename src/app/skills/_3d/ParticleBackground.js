@@ -1,12 +1,12 @@
 'use client'
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { useEffect, useRef } from 'react'
 
 const ParticleBackground = () => {
     const canvasRef = useRef(null)
 
     useEffect(() => {
+
         const canvas = canvasRef.current
         const aspectRatio = window.innerWidth / window.innerHeight
         const scene = new THREE.Scene();
@@ -14,13 +14,10 @@ const ParticleBackground = () => {
         const renderer = new THREE.WebGLRenderer({ antialias: true, canvas });
         scene.background = new THREE.Color(0x21132b);
 
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(window.innerWidth, window.innerHeight, true);
         renderer.setPixelRatio(window.devicePixelRatio);
 
-        const orbit = new OrbitControls(camera, renderer.domElement);
-        orbit.update();
-        orbit.enableZoom = false;
-        orbit.enableDamping = true;
+
 
         // Initialisation des particules
         const numParticles = 1000;
@@ -60,13 +57,12 @@ const ParticleBackground = () => {
         function animate() {
             requestAnimationFrame(animate);
             animateParticles();
-            orbit.update();
             renderer.render(scene, camera);
         }
 
         function onWindowResize() {
             const width = window.innerWidth;
-            const height = window.innerHeight;
+            const height = window.screen.height;
 
             renderer.setSize(width, height);
             renderer.setPixelRatio(window.devicePixelRatio);

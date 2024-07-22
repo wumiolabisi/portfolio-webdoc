@@ -9,7 +9,7 @@ export default function Skills() {
     const { currentDiapo } = DiapoNavigator({ diapos: skillsDiapos });
 
     return (
-        <div className="overflow-hidden relative">
+        <div className="relative">
             <ParticleBackground />
             <div className="absolute top-0 left-0 w-full h-full">
                 <div className="flex flex-row justify-center items-center h-full">

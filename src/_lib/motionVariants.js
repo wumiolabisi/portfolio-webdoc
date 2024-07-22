@@ -23,3 +23,8 @@ export const hoverEffect = {
     x: 5,
     y: 5
 };
+
+export const sectionVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+};
