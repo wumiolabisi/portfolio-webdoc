@@ -12,7 +12,7 @@ const Diapo5 = () => {
                 transition={{ type: "spring", stiffness: 100 }}
                 variants={imageVariants}
             >
-                <Video height="video-h-long" src="/videos/video-omowumi-page-home.mp4" replacementImg="/wumi-section-presentation-1.jpg" />
+                <Video height="video-h-long" src="/videos/video-omowumi-page-home.mp4" replacementImg="/Omowumi-Olabisi-developpeuse-web.jpeg" />
             </motion.div>
             <motion.div className="flex flex-col w-full md:w-3/6 justify-center items-center"
                 initial="hidden"

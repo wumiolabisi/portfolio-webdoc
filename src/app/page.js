@@ -17,7 +17,7 @@ export default function Home() {
           </article>
         </div>
         <div className="flex flex-col w-full md:w-3/6 justify-center content-center items-center h-fit">
-          <Video height="video-h-long" src="/videos/video-omowumi-page-home.mp4" replacementImg="/wumi-section-presentation-1.jpg" />
+          <Video height="video-h-long" src="/videos/video-omowumi-page-home.mp4" replacementImg="/Omowumi-Olabisi-developpeuse-web.jpeg" />
         </div>
       </div>
     </div>

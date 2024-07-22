@@ -13,7 +13,7 @@ const Diapo3 = () => {
 
 
         <div className="flex flex-col justify-center w-full h-full gap-4 px-8">
-            <div className="flex flex-col gap-4 md:flex-row w-full items-start justify-center">
+            <div className="flex flex-col gap-4 md:flex-row w-full items-start justify-center py-8">
                 <div className="w-full md:w-1/5">
                     <motion.div
                         initial="hidden"
@@ -27,7 +27,7 @@ const Diapo3 = () => {
                             <li className="text-white py-2"><button onClick={() => setActiveProject("project1")}>Page 28</button></li>
                             <li className="text-white py-2"><button onClick={() => setActiveProject("project2")}>Kroskel</button></li>
                             <Link target="_blank" href="https://github.com/wumiolabisi" alt="Accéder à mon profil github" title="Accéder à mon profil Github pour voir d'autres projets"><li className="text-white py-4">Voir d'autres projets</li></Link>
-                            <Button href="" label="Télécharger mon CV" />
+                            <Button href="/CV-Omowumi-OLABISI-Developpeuse-Web.pdf" label="Voir mon CV" />
                         </ul>
                     </motion.div>
 
@@ -49,7 +49,7 @@ const Diapo3 = () => {
                     >
                         <article className="text-wrap text-white pb-4">
                             <div className="flex flex-row justify-center py-8">
-                                <Image className="rounded-lg mx-auto" src="/wumi-section-presentation-1-1.jpg"
+                                <Image className="rounded-lg mx-auto" src="/projet-page28.png"
                                     width={500}
                                     height={300}
                                     alt="Picture of the author" style={{ objectFit: "cover" }} />
@@ -94,10 +94,10 @@ const Diapo3 = () => {
                     >
                         <article className="text-wrap text-white pb-4">
                             <div className="flex flex-row justify-center py-8">
-                                <Image className="rounded-lg mx-auto" src="/wumi-section-presentation-1-1.jpg"
+                                <Image className="rounded-lg mx-auto" src="/projet-kroskel.png"
                                     width={500}
                                     height={300}
-                                    alt="Picture of the author" style={{ objectFit: "cover" }} />
+                                    alt="Le site Kroskel au 07/2024 : mise à jour du site effectuée par Omowumi OLABISI" style={{ objectFit: "cover" }} />
 
                             </div>
                             <h2 className="text-xl font-bold">Mise en place de la boutique e-commerce KROSKEL</h2>
@@ -108,8 +108,8 @@ const Diapo3 = () => {
                             </ul>
                             <p className="my-4">
                                 Kroskel est une marque de vêtements franco-camerounaise créé en 2015 par Ornella Djoukui.
-                                Pour améliorer la visibilité de sa marque en ligne, elle a fait appel à moi pour concevoir et mettre en place rapidement une
-                                boutique en ligne et un blog.
+                                Pour améliorer la visibilité de sa marque en ligne, elle m'a confié la conception et la mise en place de sa
+                                boutique en ligne et du blog. L'un des plus grands défis de ce projet a été le délai court pour livrer la solution.
                             </p>
                             <h3 className="font-bold">Points clés de ce projet</h3>
                             <ul className='list-disc ps-8'>
