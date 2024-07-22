@@ -5,7 +5,7 @@ const DiapoNavigator = ({ diapos, initialIndex = 0 }) => {
     const [currentDiapo, setCurrentDiapo] = useState(initialIndex);
     const totalDiapos = diapos.length;
     const audio = new Audio('/sounds/COMCam_Instamatic declenchement 2 (ID 2822)_LS.mp3');
-    audio.volume = 0.3
+    audio.volume = 0.2
 
     const handleDiapoNext = () => {
         setCurrentDiapo((prev) => Math.min(prev + 1, totalDiapos - 1));

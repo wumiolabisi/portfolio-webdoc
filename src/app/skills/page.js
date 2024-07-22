@@ -8,6 +8,11 @@ import { AnimatePresence } from 'framer-motion';
 export default function Skills() {
     const { currentDiapo } = DiapoNavigator({ diapos: skillsDiapos });
 
+    const ambientSound = new Audio('/sounds/magic-mobil-1.mp3');
+    ambientSound.loop = true;
+    ambientSound.volume = 0.2;
+    ambientSound.play();
+
     return (
         <div className="relative">
             <ParticleBackground />

@@ -51,6 +51,24 @@ video.video-container-2 {
   pointer-events: none;
 }
 
+.bg-video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-video-blur {
+  -o-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
 a.btn-primary {
   text-decoration: none;
   color: var(--color-secondary);
@@ -74,7 +92,7 @@ table td {
 }
 
 .height-section {
-  height: 1000px;
+  height: 800px;
   scrollbar-width: thin;
   scrollbar-color: #feeeffa2 var(--color-primary);
 }
