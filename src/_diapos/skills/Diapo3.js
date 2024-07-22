@@ -13,7 +13,7 @@ const Diapo3 = () => {
 
 
         <div className="flex flex-col justify-center w-full h-full gap-4 px-8">
-            <div className="flex flex-col gap-4 md:flex-row w-full items-center justify-center">
+            <div className="flex flex-col gap-4 md:flex-row w-full items-start justify-center">
                 <div className="w-full md:w-1/5">
                     <motion.div
                         initial="hidden"
@@ -38,7 +38,7 @@ const Diapo3 = () => {
                     variants={sectionVariants}
                     transition={{ duration: 0.5 }}
                     id="project1"
-                    className={activeProject === "project1" ? "flex flex-col md:rounded-3xl w-full md:w-4/5 justify-center md:justify-start md:bg-light-white md:p-16 " : "hidden"}
+                    className={activeProject === "project1" ? "flex flex-col md:rounded-3xl w-full height-section md:w-4/5 justify-center md:justify-start md:bg-light-white md:p-16 overflow-y-scroll" : "hidden"}
                 >
                     <motion.div id="page28"
                         initial="hidden"

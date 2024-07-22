@@ -7,6 +7,8 @@
 :root {
   --color-primary: theme('colors.grey-dark');
   --color-secondary: theme('colors.white');
+  --color-transparent: theme('colors.light-white');
+
 }
 
 
@@ -71,12 +73,18 @@ table td {
   visibility: hidden;
 }
 
-#myCanva {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+.height-section {
+  height: 1000px;
+  scrollbar-width: thin;
+  scrollbar-color: #feeeffa2 var(--color-primary);
+}
+
+.height-section>*::-webkit-scrollbar {
+  width: 12px;
+}
+
+.height-section>*::-webkit-scrollbar-track {
+  background: #feeeff;
 }
 
 span.badge {
