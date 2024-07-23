@@ -20,7 +20,7 @@ const Diapo4 = () => {
                         exit="exit"
                         variants={textVariants}
                     >
-                        <article className="text-wrap w-80">
+                        <article className="text-wrap p-8 md:p-0 md:w-80">
                             <p className="text-white text-2xl">
                                 Après le bac, j'ai voulu suivre un cursus qui me permettrait de mettre les mains dans le camboui rapidement.
                             </p>

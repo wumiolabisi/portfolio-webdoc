@@ -15,7 +15,8 @@ export default function Skills() {
         ambientSound.play();
 
         const stopSound = () => {
-            ambientSound.pause();
+            console.log(timer)
+            ambientSound.volume = 0;
             ambientSound.currentTime = 0;
         };
         const timer = setTimeout(stopSound, 10000);

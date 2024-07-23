@@ -37,6 +37,12 @@ html {
   height: 250px;
 }
 
+@media only screen and (max-width: 768px) {
+  .video-h-long {
+    height: 250px;
+  }
+}
+
 video.video-content {
   object-fit: cover;
   pointer-events: none;

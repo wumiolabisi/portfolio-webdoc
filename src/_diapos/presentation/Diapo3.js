@@ -21,7 +21,7 @@ const Diapo3 = () => {
                 exit="exit"
                 variants={textVariants}
             >
-                <article className="text-wrap w-80">
+                <article className="text-wrap p-8 md:p-0 md:w-80">
                     <p className="text-white text-2xl pb-5">
                         Lorsqu'on a eu Internet, ce monde de possibilités s'est étendu davantage.
                     </p>

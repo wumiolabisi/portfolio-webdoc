@@ -21,7 +21,7 @@ const Diapo5 = () => {
                 exit="exit"
                 variants={textVariants}
             >
-                <article className="text-wrap md:w-full w-96">
+                <article className="text-wrap p-8 md:p-0 md:w-96">
                     <p className="text-white text-2xl">
                         Grâce à mes expériences professionnelles, j'ai appris à être polyvalente et à travailler en équipe pour répondre aux besoins d'une entreprise.
                     </p>

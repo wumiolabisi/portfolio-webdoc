@@ -55,7 +55,7 @@ const Diapo1 = () => {
                     transition={{ delay: 2.3 }}
                     variants={textVariants}
                 >
-                    <article className="text-wrap py-8 w-80">
+                    <article className="text-wrap p-8 md:p-0 md:w-80">
                         <p className="text-white text-2xl md:ml-4 sm:mt-4">
                             Dès mon plus jeune âge, j&#x27;ai utilisé l&#x27;ordinateur et
                             internet comme un monde de possibilités infinies.

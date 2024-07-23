@@ -18,16 +18,16 @@ export default function RootLayout({ children }) {
 
     <html lang="fr">
       <body className={zilla_slab.className}>
-        <main className="bg-grey-dark">
-          <div className="container mx-auto">
-            <div className="flex flex-col justify-center items-center h-screen">
+        <main className="bg-grey-dark h-full">
+          <div className="container mx-auto h-full">
+            <div className="flex flex-col justify-center items-center h-full">
               {children}
             </div>
           </div>
           <div className="relative h-5">
             <div className="fixed left-0 bottom-4 w-full flex flex-row justify-center">
-              <div className="text-white rounded-3xl bg-light-white p-4">
-                <ul className="flex flex-inline justify-center">
+              <div className="text-white rounded-3xl bg-light-white p-4 ">
+                <ul className="flex flex-inline justify-center md:h-6 md:hover:h-auto transition-all overflow-hidden">
                   <li className="me-2 text-sm">
                     <Link href="/" title="Rendez-vous sur la page d'accueil" alt="Cliquez ici pour accéder à la page d'accueil">
                       <Image className="rounded-lg mx-auto" src="/home-icon.png"
