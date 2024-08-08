@@ -1,33 +1,119 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primary: theme('colors.grey-dark');
+  --color-secondary: theme('colors.white');
+  --color-transparent: theme('colors.light-white');
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.video-container {
+  width: 80%;
+}
+
+.video-h-long {
+  height: 450px;
+}
+
+.video-h-large {
+  height: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .video-h-long {
+    height: 250px;
+  }
+}
+
+video.video-content {
+  object-fit: cover;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+video.video-container-2 {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-video-blur {
+  -o-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+a.btn-primary {
+  text-decoration: none;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-secondary);
+  padding: 15px 25px 15px 5px;
+  text-align: left;
+}
+
+table td {
+  padding: 20px 15px;
+}
+
+.diapo-current {
+  visibility: visible;
+}
+
+.diapo-next,
+.diapo-prev {
+  visibility: hidden;
+}
+
+.height-section {
+  height: 800px;
+  scrollbar-width: thin;
+  scrollbar-color: #feeeffa2 var(--color-primary);
+}
+
+.height-section>*::-webkit-scrollbar {
+  width: 12px;
+}
+
+.height-section>*::-webkit-scrollbar-track {
+  background: #feeeff;
+}
+
+span.badge {
+  padding: 2px 5px;
+  margin-right: 10px;
+  background-color: #dcf7d0;
+  color: var(--color-primary);
 }
