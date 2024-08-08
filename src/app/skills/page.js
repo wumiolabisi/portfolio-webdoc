@@ -15,7 +15,6 @@ export default function Skills() {
         ambientSound.play();
 
         const stopSound = () => {
-            console.log(timer)
             ambientSound.volume = 0;
             ambientSound.currentTime = 0;
         };
@@ -28,10 +27,10 @@ export default function Skills() {
     }, []);
 
     return (
-        <div className="relative">
+        <div className="relative top-0">
             <ParticleBackground />
             <div className="absolute top-0 left-0 w-full h-full">
-                <div className="flex flex-row justify-center items-center h-full">
+                <div className="flex flex-row justify-center items-center md:h-full h-auto">
                     <AnimatePresence mode="wait">
                         <Diapositive key={currentDiapo} currentDiapo={currentDiapo} diapos={skillsDiapos} />
                     </AnimatePresence>

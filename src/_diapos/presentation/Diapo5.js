@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Diapo5 = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center w-full h-full">
+        <div className="flex flex-col md:flex-row items-center justify-center w-full h-full p-8">
             <motion.div className="flex flex-col w-full md:w-3/6 justify-center content-center items-center h-fit"
                 initial="hidden"
                 animate="visible"
@@ -21,7 +21,7 @@ const Diapo5 = () => {
                 exit="exit"
                 variants={textVariants}
             >
-                <article className="text-wrap p-8 md:p-0 md:w-96">
+                <article className="text-wrap p-8 md:p-0 ">
                     <p className="text-white text-2xl">
                         Grâce à mes expériences professionnelles, j'ai appris à être polyvalente et à travailler en équipe pour répondre aux besoins d'une entreprise.
                     </p>

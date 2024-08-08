@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Diapo3 = () => {
     return (
-        <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-full">
+        <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-full p-8">
             <motion.div className="flex flex-col w-full md:w-3/6 justify-center content-center items-center h-fit"
                 initial="hidden"
                 animate="visible"

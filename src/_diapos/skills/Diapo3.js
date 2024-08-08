@@ -12,7 +12,7 @@ const Diapo3 = () => {
     return (
 
 
-        <div className="flex flex-col justify-center w-full h-full gap-4 px-8">
+        <div className="flex flex-col justify-center w-full h-full gap-4 p-8">
             <div className="flex flex-col gap-4 md:flex-row w-full items-start justify-center py-8">
                 <div className="w-full md:w-1/5">
                     <motion.div

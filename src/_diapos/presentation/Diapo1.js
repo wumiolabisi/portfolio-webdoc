@@ -5,7 +5,7 @@ import { titleVariants, imageVariants, textVariants, hoverEffect } from '@/_lib/
 const Diapo1 = () => {
     return (
 
-        <div className="flex flex-col justify-center w-full h-full gap-4 px-8">
+        <div className="flex flex-col justify-center w-full h-full gap-4 p-8">
 
 
             <motion.div className="flex w-full justify-center"
