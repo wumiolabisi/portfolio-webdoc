@@ -1,39 +1,15 @@
-'use client'
-import Diapositive from "@/_components/Diapositive"
-import { useEffect, useState } from 'react'
+'use client';
+import Diapositive from '@/_components/Diapositive';
+import { presentationDiapos } from '@/_diapos/presentationDiapos';
+import DiapoNavigator from '@/_components/DiapoNavigator';
+import { AnimatePresence } from 'framer-motion';
 
 export default function Presentation() {
-
-    const [currentDiapo, setCurrentDiapo] = useState(0)
-    const totalDiapos = 6
-
-    const handleDiapoNext = () => {
-        setCurrentDiapo((prev) => Math.min(prev + 1, totalDiapos - 1));
-    }
-
-    const handleDiapoPrev = () => {
-        setCurrentDiapo((prev) => Math.max(prev - 1, 0));
-    }
-
-
-    useEffect(() => {
-        const handleKeyDown = (event) => {
-            if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
-                handleDiapoNext()
-            } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
-                handleDiapoPrev()
-            }
-        }
-
-        window.addEventListener('keydown', handleKeyDown);
-
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-        }
-    }, [])
-
+    const { currentDiapo } = DiapoNavigator({ diapos: presentationDiapos });
 
     return (
-        <Diapositive currentDiapo={currentDiapo} />
-    )
+        <AnimatePresence mode="wait">
+            <Diapositive key={currentDiapo} currentDiapo={currentDiapo} diapos={presentationDiapos} />
+        </AnimatePresence>
+    );
 }

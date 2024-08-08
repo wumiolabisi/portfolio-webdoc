@@ -5,9 +5,10 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primary: theme('colors.grey-dark');
+  --color-secondary: theme('colors.white');
+  --color-transparent: theme('colors.light-white');
+
 }
 
 
@@ -36,6 +37,12 @@ html {
   height: 250px;
 }
 
+@media only screen and (max-width: 768px) {
+  .video-h-long {
+    height: 250px;
+  }
+}
+
 video.video-content {
   object-fit: cover;
   pointer-events: none;
@@ -50,11 +57,29 @@ video.video-container-2 {
   pointer-events: none;
 }
 
+.bg-video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-video-blur {
+  -o-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
 a.btn-primary {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-secondary);
   text-transform: uppercase;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid var(--color-secondary);
   padding: 15px 25px 15px 5px;
   text-align: left;
 }
@@ -70,4 +95,25 @@ table td {
 .diapo-next,
 .diapo-prev {
   visibility: hidden;
+}
+
+.height-section {
+  height: 800px;
+  scrollbar-width: thin;
+  scrollbar-color: #feeeffa2 var(--color-primary);
+}
+
+.height-section>*::-webkit-scrollbar {
+  width: 12px;
+}
+
+.height-section>*::-webkit-scrollbar-track {
+  background: #feeeff;
+}
+
+span.badge {
+  padding: 2px 5px;
+  margin-right: 10px;
+  background-color: #dcf7d0;
+  color: var(--color-primary);
 }
